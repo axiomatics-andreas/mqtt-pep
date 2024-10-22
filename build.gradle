@@ -20,7 +20,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'io.axiomatics.mqttpep.brokerr.MoquetteServer'
+    mainClass = 'io.axiomatics.mqttpep.broker.MoquetteServer'
 }
 
 tasks.named('test') {
