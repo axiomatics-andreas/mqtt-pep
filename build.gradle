@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url uri("${project.rootDir}/mavenRepo")
+    }
+}
+
+dependencies {
+    implementation group: 'io.moquette', name: 'moquette-broker', version: '0.17'
+    implementation 'io.joynr.java.messaging.mqtt:paho-mqtt-client:1.14.2'
+    implementation 'io.xacml:json-pep-sdk-client-feign:1.1-SNAPSHOT' // from local m2 repository
+    implementation 'org.slf4j:slf4j-simple:1.6.1'
+
+}
+
+application {
+    mainClass = 'io.axiomatics.mqttpep.brokerr.MoquetteServer'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

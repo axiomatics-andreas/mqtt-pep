@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Oct 15 12:21:48 CEST 2024
+json-pep-sdk-client-feign-1.1-SNAPSHOT-sources.jar>=
+json-pep-sdk-client-feign-1.1-SNAPSHOT.pom>=
+json-pep-sdk-client-feign-1.1-SNAPSHOT.jar>=
